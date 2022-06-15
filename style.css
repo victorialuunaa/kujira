@@ -238,13 +238,16 @@ background: linear-gradient(90deg, rgba(255,223,153,1) 19%, rgba(152,182,52,1) 5
     justify-content: center;
     align-items: center;
     background-color: #D9754A;
+    gap: 80px;
 }
-.datos {
-    align-items: center;
+.datos ul {
+    list-style: none;
+    gap: 10px;
 }
 .formulario {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    text-align: start;
 }

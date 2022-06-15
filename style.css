@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --salmon: #D9754A;
+    --negro: #2F302B;
+    --alga: #337357;
+    --verde: #98B634;
+    --gris: #E4E3D3;
+    --beige: #FFDF99;
+}
+@media (min-width: 1024px)
+body {
+    font-family: "Quicksand", "sans-serif";
+}
+/* navbar */
+li, a, button {
+font-weight: 500;
+font-size: 16px;
+color: #2F302B;
+text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-between;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    height: auto;
+    width: 50px;
+    justify-content: flex-start;
+}
+.nav-items {
+    list-style: none;
+}
+.nav-items li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-items li a:hover {
+    color: #98B634;
+}
+button {
+    padding: 9px 25px;
+    background-color: #E4E3D3;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #D9754A;
+}
+/* intro a la organizacion */
+.introduccion {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    margin: 15px, 25px;
+}
+.titular {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.introduccion img {
+    width: 60%;
+    height: auto;
+    padding: 25px;
+    border-radius: 50px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* historia */
+.organizacion {
+    background: rgb(255,223,153);
+background: linear-gradient(90deg, rgba(255,223,153,1) 19%, rgba(152,182,52,1) 52%, rgba(228,227,211,1) 76%);
+}
+.historia {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+    gap: 80px;
+}
+.historia img {
+    width: 50%;
+    height: auto;
+    justify-content: flex-end;
+    border-radius: 50px;
+}
+/* tarjetas comida */
+.conteiner {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.conteiner .card{
+width: 330px;
+height: 430px;
+border-radius: 8px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+margin: 30px; 
+text-align: center;
+transition: all 0.25s;
+}
+.conteiner .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.conteiner .card img{
+    width: 220px;
+    height: 220px;
+}
+.conteiner .card h4{
+    font-weight: 600;
+}
+.conteiner .card p{
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.conteiner .card a{
+    font-weight: 500;
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    color: #2F302B;
+    background-color: #E4E3D3;
+    text-align: center;
+    font-size: small;
+}
+/* como trabajamos */
+.como-trabajamos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
+    background: rgb(255,223,153);
+background: linear-gradient(90deg, rgba(255,223,153,1) 19%, rgba(152,182,52,1) 52%, rgba(228,227,211,1) 76%);
+}
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.conteiner .tarjeta {
+    width: 330px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #E4E3D3;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.conteiner .tarjeta:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.conteiner .tarjeta h4 {
+    font-weight: 600;
+}
+.conteiner .tarjeta p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.conteiner .tarjeta img {
+    width: 220px;
+    height: 220px;
+}
